@@ -1,0 +1,63 @@
+{
+    "API_KEY": {
+        "key": "?api_key=",
+        "value": "RGAPI-2e4ba28c-44ca-4096-ade9-55efd66646c4"
+    },
+
+
+
+
+
+
+    "ddragon": {
+        "base": "https://ddragon.leagueoflegends.com/cdn/",
+
+        "url": {
+            "champions": "{version}/data/{lang}/champion.json",
+            "champion": "{version}/data/{lang}/champion/{champion}.json",
+            "championSplash": "img/champion/splash/{champion}_{n}.jpg",
+			"championSquare": "{version}/img/champion/{champion}.png"
+        }
+    },
+
+
+
+    "api": {
+        "base": "https://{region}.api.riotgames.com/",
+
+        "url": {
+            "summonerByName": "lol/summoner/v{version}/summoners/by-name/{name}",
+            "summonerMasteries": "lol/champion-mastery/v{version}/champion-masteries/by-summoner/{summonerId}",
+			"summonerMastery": "lol/champion-mastery/v{version}/champion-masteries/by-summoner/{summonerId}/by-champion/{championId}"
+        }
+    },
+
+
+
+    "REGIONS": {
+        "EUW": "euw1",
+		"EUN": "eun1",
+		"NA": "na1",
+		"RU": "ru",
+		"KR": "kr",
+		"BR": "br1",
+		"JP": "jp1",
+		"LA": "la1",
+		"LA2": "la2",
+		"OC": "oc1",
+		"TR": "tr1"
+    },
+
+
+
+    "VERSIONS": {
+        "summoner": 4,
+        "championmastery": 4
+    },
+
+    "LANGS": {
+        "fr": "fr_FR",
+        "en": "en_EN",
+        "us": "en_US"
+    }
+}
