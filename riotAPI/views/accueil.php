@@ -15,28 +15,28 @@ var_dump(BASE_PATH);
 
 <h1>Rechercher un champion</h1>
 
-<div class="container mb-2">
-        
-        
-        
-            <div class="input-group">
-                <input type="text" class="form-control" id="search" placeholder="Search champions..."></input>
-                <button onclick="getChampion()" class="btn btn-primary">Search</button>
-            </div> 
-            <br>
+    <div class="container mb-2">
+            
+            
+            
+                <div class="input-group">
+                    <input type="text" class="form-control" id="search" placeholder="Search champions..."></input>
+                    <button onclick="getChampion()" class="btn btn-primary">Search</button>
+                </div> 
+                <br>
 
-        
-        
-            <p id="cool"></p>
+            
+            
+                <p id="cool"></p>
 
-        <div class="row mt-2 text-center" id="backdrop">
-            <div class="container-fluid col mt-3 mb-2" id="root">
-                
+            <div class="row mt-2 text-center" id="backdrop">
+                <div class="container-fluid col mt-3 mb-2" id="root">
+                    
+                </div>
             </div>
-        </div>
-        <footer class="text-center">
-            <p>Application developed by Guénolé LEGRAND.  Info pulled from Riot Games API.</p>
-        </footer>
+            <footer class="text-center">
+                <p>Application developed by Guénolé LEGRAND.  Info pulled from Riot Games API.</p>
+            </footer>
 
 
-</div>
+    </div>

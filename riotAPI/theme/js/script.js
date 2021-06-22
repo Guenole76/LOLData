@@ -6,7 +6,7 @@ async function getChampion(){
     name = name.charAt(0).toUpperCase() + name.slice(1);
 
     console.log(name);
-    const httpResponse = await fetch(`http://ddragon.leagueoflegends.com/cdn/11.4.1/data/en_US/champion/${name}.json`);
+    const httpResponse = await fetch(`http://ddragon.leagueoflegends.com/cdn/11.4.1/data/fr_FR/champion/${name}.json`);
     
     const body = await httpResponse.json();
     console.log(body);
@@ -21,6 +21,10 @@ async function getChampion(){
                         <h3>${infoID}</h3>
                     </li>`;
     }*/
+
+    if(name === Ezreal){
+        background
+    }
 
     let listHtml = ``;
 
@@ -39,24 +43,23 @@ async function getChampion(){
         const spellID = spell.id;
         const spellName = spell.name;
         const spellDesc = spell.description;
-        listHtml += `<li>
-                    <h3>${spellID}</h3>
-                    <h3>Nom du sort: ${spellName}</h3> <br>
-                     <p>${spellDesc}</p></li>`;
+        listHtml += `
+                    <h3>${spellID} : ${spellName}</h3>
+                     <p>${spellDesc}</p>`;
     }
 
     for(let skin of body.data[name].skins){
         const name = skin.name;
         const num = skin.num;
         listHtml += `<li>
-                    <h2>nom du skin: ${name}</h2>
+                    <h3>nom du skin: ${name}</h3>
                     <h3>skin numéro: ${num}</h3></li>`
 
     }
 
     const lore = body.data[name].lore
     listHtml += `<li>
-    <p> Histoire du champion: </p> <br>
+    <h3> Histoire du champion: </h3> <br>
     <p> ${lore} </p>
     </li>`
 

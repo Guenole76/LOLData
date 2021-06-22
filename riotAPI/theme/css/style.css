@@ -1,19 +1,24 @@
-h1{
 
+
+
+
+
+h1{
+    font-family: fantasy; 
     color: black;
     font-size: 48px;
 }
 
 h3{
-
-    color: green;
+    font-family: Jazz LET, fantasy;
+    color: black;
     font-size: 48px;
 }
 
 
 p{
-
-    color: purple;
+    
+    color: black;
     font-size: 48px;
 }
 
