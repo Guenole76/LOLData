@@ -35,7 +35,7 @@ var_dump(BASE_PATH);
                 </div>
             </div>
             <footer class="text-center">
-                <p>Application developed by Guénolé LEGRAND.  Info pulled from Riot Games API.</p>
+                <h3>Application developed by Guénolé LEGRAND.  Info pulled from Riot Games API.</h3>
             </footer>
 
 

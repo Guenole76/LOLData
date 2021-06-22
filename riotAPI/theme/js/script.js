@@ -22,9 +22,7 @@ async function getChampion(){
                     </li>`;
     }*/
 
-    if(name === Ezreal){
-        background
-    }
+
 
     let listHtml = ``;
 
@@ -37,6 +35,11 @@ async function getChampion(){
         ${full}
     </li>`
 
+    listHtml += `<li>
+    <h3> Sort du champion : </h3> 
+        
+    </li>`
+
 
 
     for(let spell of body.data[name].spells){
@@ -44,7 +47,8 @@ async function getChampion(){
         const spellName = spell.name;
         const spellDesc = spell.description;
         listHtml += `
-                    <h3>${spellID} : ${spellName}</h3>
+                    
+                    <h1>${spellID} : ${spellName}</h1>
                      <p>${spellDesc}</p>`;
     }
 
@@ -59,7 +63,7 @@ async function getChampion(){
 
     const lore = body.data[name].lore
     listHtml += `<li>
-    <h3> Histoire du champion: </h3> <br>
+    <h1> Histoire du champion: </h1> <br>
     <p> ${lore} </p>
     </li>`
 
